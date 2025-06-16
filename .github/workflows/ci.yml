@@ -1,0 +1,25 @@
+name: Regenerate package-lock.json
+
+on:
+  push:
+    branches:
+      - main  # You can also use 'master' or any branch you're working on
+
+jobs:
+  regenerate-lock:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies and regenerate package-lock.json
+        run: |
+          # Install dependencies to regenerate package-lock.json
+          npm install
+          # Automatically commit and push the updated package-lock.json
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add package-lock.json
+          git commit -m "Auto-update package-lock.json"
+          git push origin main
