@@ -14,7 +14,7 @@ Server infrastructure costs money and developing this project consumes a lot of 
 
 ## Who is this package for
 
-Package is for those who want a fully-configurable proxy that works on many sites
+Package is for those who want a fully-configurable proxy that works on many sites.
 
 ## Effectiveness of proxy
 
