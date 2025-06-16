@@ -34,7 +34,7 @@
     "ws": "^8.2.0"
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
+    "@babel/eslint-parser": "^10.1.0",
     "dotenv-flow": "^3.2.0",
     "eslint": "^7.32.0",
     "npm-force-resolutions": "0.0.10",
