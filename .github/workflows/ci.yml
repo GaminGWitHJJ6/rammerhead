@@ -3,7 +3,7 @@ name: Regenerate package-lock.json
 on:
   push:
     branches:
-      - main  # You can also use 'master' or any branch you're working on
+      - master
 
 jobs:
   regenerate-lock:
